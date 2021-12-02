@@ -5,7 +5,7 @@
 # Overview
 This script compares the network overhead of various Software-Defined Networking (SDN) controllers. 
 
-The workload generator used is the Mininet Flow Generator. This generates realistic flows whcih exercise the controllers. Packets are measured using tshark and examined using Python's scapy library. This flow generator was modified to use D-ITG instead of iperf as the traffic generation mechanism.
+The workload generator used is the Mininet Flow Generator[^1]. This generates realistic flows whcih exercise the controllers. Packets are measured using tshark and examined using Python's scapy library. This flow generator was modified to use D-ITG instead of iperf as the traffic generation mechanism.
 
 We apply the Multiple Interleaved Trials (MIT) technique to obtain fair and repeatable comparisons in a virtualized environment. 
 
@@ -30,3 +30,4 @@ for num_experiments
   end for
 end for
 ```
+[^1]: https://github.com/stainleebakhla/mininet-flow-generator
